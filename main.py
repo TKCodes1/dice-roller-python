@@ -35,14 +35,7 @@ dice_art = {
 
 num_of_dices = int(input("How many dice? "))
 total = 0
-dices = [random.randint(1,6) for _ in range(num_of_dices)]
-
-for die in range(num_of_dices):
-    dices.append(random.randint(1,6))
-
-#for die in range(num_of_dices):
-#    for line in dice_art.get(dices[die]):
-#        print(line)
+dices = [random.randint(1,6) for di in range(num_of_dices)]
 
 for line in range(5):
     for die in dices:
